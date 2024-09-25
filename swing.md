@@ -79,3 +79,14 @@
 <li>Guessing Game</li>
 </ul>
 
+<H2>Java Program Run From Command Line</h2>
+<p>Procedure </p>
+<ol>
+<li>javac---->Path Setup</li>
+<li>cls ---->Screen Clear</li>
+<li>cd Desktop ---> Change Directory </li>
+<li>javac File.java</li>
+<li>java File</li>
+</ol>
+
+
