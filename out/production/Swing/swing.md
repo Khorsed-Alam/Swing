@@ -240,3 +240,43 @@ public class TwoStepshowInputDialog {
 }
 
 ````
+
+<h2>showConfirmDialog</h2>
+<em>To take conformation from user</em>
+
+````java
+package showConfirmDialog;
+
+import javax.swing.*;
+
+public class showConfirmDialog {
+    public static void main(String[] args) {
+        int choice= JOptionPane.showConfirmDialog(null,"Do you want to quit this Program ","Title",JOptionPane.YES_NO_CANCEL_OPTION);
+        if(choice==JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+        else if(choice== JOptionPane.NO_OPTION){
+            System.exit(0);
+        }else {
+            System.out.println("You have clicked cancle Option");
+        }
+    }
+}
+
+````
+<h1>JFrame</h1>
+<h3>What is JFrame</h3>
+<p>Frame is a class in Java and has its own methods and constructors. Methods are functions that impact the JFrame, such as setting the size or visibility</p>
+
+
+<h4>JFrame Method</h4>
+<ul>
+<li>setVisible()----> Check Visibility </li>
+<li>setDefaultCloseOperation()----> To stop execution </li>
+<li>setSize()---->to set custom size</li>
+<li>setLocation()---->To set custom Location </li>
+<li>setLocationRelativeTo()----> To set Location directly center</li>
+<li>setBounds()----> Combination of location and size</li>
+<li>setTitle()----> To set custom Title</li>
+<li>setResizable()----> Windows size control </li>
+</ul>
