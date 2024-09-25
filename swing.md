@@ -310,3 +310,47 @@ public class JFrameDemo{
 }
 
 ````
+
+
+<h4>Inherit JFrame</h4>
+
+```java
+package JFrame;
+
+import javax.swing.*;
+
+public class JFrameDemo02 extends JFrame {
+    public static void main(String[] args) {
+        JFrameDemo02 frame= new JFrameDemo02();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setBounds(300,300,600,600);
+        frame.setTitle("Test -- Title");
+    }
+}
+
+
+```
+
+<h4>Use Constructor</h4>
+
+````java
+package JFrame;
+
+import javax.swing.*;
+
+public class JFrameDemo03 extends JFrame{
+    JFrameDemo03(){
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(100,200,500,500);
+        setTitle("Demo O3");
+
+    }
+
+    public static void main(String[] args) {
+       JFrameDemo03 frame= new JFrameDemo03();
+        frame.setVisible(true);
+    }
+}
+
+````

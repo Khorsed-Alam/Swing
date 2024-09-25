@@ -280,3 +280,59 @@ public class showConfirmDialog {
 <li>setTitle()----> To set custom Title</li>
 <li>setResizable()----> Windows size control </li>
 </ul>
+
+````java
+package JFrame;
+
+import javax.swing.*;
+
+public class JFrameDemo{
+    public static void main(String[] args) {
+        // create JFrame Object
+        JFrame jFrame= new JFrame();
+        // To check Visibility
+        jFrame.setVisible(true);
+        // control Execution
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        set window size
+//        jFrame.setSize(300,300);
+        // set window location
+//        jFrame.setLocation(100, 100);
+        // set window  location and size by one method
+        jFrame.setBounds(100, 100, 400, 400);
+        // to set Frame Title
+        jFrame.setTitle("JFrame Demo");
+
+        // size fixed by setResize method
+        jFrame.setResizable(false);
+    }
+
+}
+
+````
+
+
+<h4>Inherit JFrame</h4>
+```java
+package JFrame;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Test extends JFrame {
+    public static void main(String[] args) {
+        Test frame= new Test();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setBounds(300,300,600,600);
+        frame.setTitle("Test -- Title");
+    }
+}
+
+```
+
+<h4>Use Constructor</h4>
+
+````java
+
+````
