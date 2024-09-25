@@ -121,6 +121,7 @@ public class showMessageDialog_2Parameter {
     }
 }
 
+
 ````
 
 <h3>showMessageDialog_4Parameter</h3>
@@ -138,17 +139,20 @@ public class showMessageDialog_2Parameter {
 
 
 ```java
-package showMessageDialog;
+package showMessageDialog_4Parameter;
 
 import javax.swing.*;
 
-public class showMessageDialog_4Parameter {
+public class showMessageDialog {
     public static void main(String[] args) {
         JOptionPane.showMessageDialog(null ,"Wrong Password","Warning",JOptionPane.ERROR_MESSAGE);
         //JOptionPane.showMessageDialog( Window Location== null(center) , Message== "Wrong Password",Title == "Warning",Icon Show == JOptionPane.ERROR_MESSAGE);
-         
+
     }
+
 }
+
+
 
 ```
 
@@ -157,5 +161,18 @@ public class showMessageDialog_4Parameter {
 <em>First of all we need to create an object of ImageIcon class<em><br/>
 <p> <strong>Syntax:</strong> JOptionPane.showMessageDialog(Window Loacation , "Message that we will show into window" , "Title of window"  , "Window Icon" , "customize Icon or image"</p>
 
+````java
+package showMessageDialog_5Parameter;
 
+import javax.swing.*;
+
+public class showMessageDialog {
+    public static void main(String[] args) {
+        ImageIcon img= new ImageIcon("Error.png");
+        JOptionPane.showMessageDialog(null , "Wrong Password","Warning",JOptionPane.ERROR_MESSAGE,img);
+
+    }
+}
+
+````
 
