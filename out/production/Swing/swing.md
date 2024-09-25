@@ -177,3 +177,66 @@ public class showMessageDialog {
 ````
 
 <h2>showInputDialog</h2>
+<b>{showInputDialog()} ---->to get input from user</b>
+
+
+```java
+package showInputDialog;
+
+import javax.swing.*;
+
+public class showInputDialog_1Attribute {
+    public static void main(String[] args) {
+        String name =JOptionPane.showInputDialog("Enter you name: ");
+        JOptionPane.showMessageDialog(null , "Welcome "+name);
+
+    }
+}
+
+```
+
+`````java
+package showInputDialog;
+
+import javax.swing.*;
+
+public class showInputDialog_2Attribute {
+    public static void main(String[] args) {
+        String F_name= JOptionPane.showInputDialog("Enter your name: ", "Name");
+        JOptionPane.showMessageDialog(null , "Hello "+F_name);
+
+    }
+}
+
+`````
+
+```java
+package showInputDialog;
+
+import javax.swing.*;
+
+public class showInputDialog_4Attribute {
+    public static void main(String[] args) {
+        String F_name= JOptionPane.showInputDialog(null, "enter your name: ", "Title",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null , "Your name "+F_name, "Output",JOptionPane.QUESTION_MESSAGE);
+    }
+}
+
+
+```
+
+````java
+package showInputDialog;
+
+import javax.swing.*;
+
+public class TwoStepshowInputDialog {
+    public static void main(String[] args) {
+        String F_Name= JOptionPane.showInputDialog(null , "Enter your name: ", "Input Page 1",JOptionPane.INFORMATION_MESSAGE);
+        String L_Name= JOptionPane.showInputDialog( null , "Enter your Name: ", "Input page 2",JOptionPane.INFORMATION_MESSAGE);
+        String name= F_Name+ L_Name;
+        JOptionPane.showMessageDialog(null,"Your Full Name: "+name);
+    }
+}
+
+````
