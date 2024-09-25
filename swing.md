@@ -128,13 +128,13 @@ public class showMessageDialog_2Parameter {
 
  <h4>JOptionPaneIcons</h4>
 
-|Icon| Code                     |IDE value|
-|----|--------------------------|-----|
-|NoIcon| JOptionPanePLAIN_MESSAGE |-1|
-|Error Icon|JOptionPaneERROR_MESSAGE|0|
-|Informatin Icon| JOptionPaneINFORMATION_MESSAGE|1|
-|Warning Icon|JOptionPaneWARNING_MESSAGE|2|
-|Question Icon|JOptionPaneQUESTION_MESSAGE|3|
+|Icon| Code                            |IDE value|
+|----|---------------------------------|-----|
+|NoIcon| JOptionPane.PLAIN_MESSAGE       |-1|
+|Error Icon| JOptionPane.ERROR_MESSAGE       |0|
+|Informatin Icon| JOptionPane.INFORMATION_MESSAGE |1|
+|Warning Icon| JOptionPane.WARNING_MESSAGE     |2|
+|Question Icon| JOptionPane.QUESTION_MESSAGE    |3|
 
 
 ```java
@@ -151,5 +151,11 @@ public class showMessageDialog_4Parameter {
 }
 
 ```
+
+<h3>showMessageDialog_5Parameter</h3>
+<h6>Add customize icon</h6>
+<em>First of all we need to create an object of ImageIcon class<em><br/>
+<p> <strong>Syntax:</strong> JOptionPane.showMessageDialog(Window Loacation , "Message that we will show into window" , "Title of window"  , "Window Icon" , "customize Icon or image"</p>
+
 
 
