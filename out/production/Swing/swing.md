@@ -168,8 +168,8 @@ import javax.swing.*;
 
 public class showMessageDialog {
     public static void main(String[] args) {
-        ImageIcon img= new ImageIcon("Error.png");
-        JOptionPane.showMessageDialog(null , "Wrong Password","Warning",JOptionPane.ERROR_MESSAGE,img);
+        ImageIcon img = new ImageIcon("showMessageDialog_5Parameter/Error.png");
+        JOptionPane.showMessageDialog(null, "Wrong Password", "Warning", JOptionPane.ERROR_MESSAGE, img);
 
     }
 }
@@ -313,15 +313,15 @@ public class JFrameDemo{
 
 
 <h4>Inherit JFrame</h4>
+
 ```java
 package JFrame;
 
 import javax.swing.*;
-import java.awt.*;
 
-public class Test extends JFrame {
+public class JFrameDemo02 extends JFrame {
     public static void main(String[] args) {
-        Test frame= new Test();
+        JFrameDemo02 frame= new JFrameDemo02();
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setBounds(300,300,600,600);
@@ -329,10 +329,42 @@ public class Test extends JFrame {
     }
 }
 
+
 ```
 
 <h4>Use Constructor</h4>
 
 ````java
+package JFrame;
+
+import javax.swing.*;
+
+public class JFrameDemo03 extends JFrame{
+    JFrameDemo03(){
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(100,200,500,500);
+        setTitle("Demo O3");
+
+    }
+
+    public static void main(String[] args) {
+       JFrameDemo03 frame= new JFrameDemo03();
+        frame.setVisible(true);
+    }
+}
 
 ````
+
+
+<h2>Change JFrame Icon </h2>
+<em>Element</em>
+<ul>
+<li>Need an icon</li>
+<li>Make an object of ImageIcon class </li>
+<li>getClass() </li>
+<li>getResource() </li>
+<li>setIconImage()</li>
+<li>getImage() </li>
+</ul>
+
+

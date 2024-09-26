@@ -168,8 +168,8 @@ import javax.swing.*;
 
 public class showMessageDialog {
     public static void main(String[] args) {
-        ImageIcon img= new ImageIcon("Error.png");
-        JOptionPane.showMessageDialog(null , "Wrong Password","Warning",JOptionPane.ERROR_MESSAGE,img);
+        ImageIcon img = new ImageIcon("showMessageDialog_5Parameter/Error.png");
+        JOptionPane.showMessageDialog(null, "Wrong Password", "Warning", JOptionPane.ERROR_MESSAGE, img);
 
     }
 }
@@ -351,6 +351,46 @@ public class JFrameDemo03 extends JFrame{
        JFrameDemo03 frame= new JFrameDemo03();
         frame.setVisible(true);
     }
+}
+
+````
+
+
+<h2>Change JFrame Icon </h2>
+<em>Element</em>
+<ul>
+<li>Need an icon</li>
+<li>Make an object of ImageIcon class </li>
+<li>getClass() </li>
+<li>getResource() </li>
+<li>setIconImage()</li>
+<li>getImage() </li>
+</ul>
+
+````java
+package Change_JFrame_Icon;
+
+import javax.swing.*;
+
+public class FrameDemo extends JFrame {
+    //private ImageIcon icon ;
+    FrameDemo(){
+        initComponent();
+    }
+    public void initComponent(){
+        ImageIcon icon= new ImageIcon(getClass().getResource("/Change_JFrame_Icon/Icon.png"));
+        this.setIconImage(icon.getImage());
+    }
+
+    public static void main(String[] args) {
+        FrameDemo frame= new FrameDemo();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setBounds(200,200, 600,600);
+        frame.setTitle("Set Icon");
+        frame.setResizable(false);
+    }
+
 }
 
 ````
