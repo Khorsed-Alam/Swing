@@ -435,6 +435,95 @@ public class JFrameDemo extends JFrame {
 }
 
 ```
+<h2>JLabel</h2>
+<p>Element for JLabel</p>
+<ul>
+<li>setText()</li>
+<li>setBounds() </li>
+</ul>
 
 
+<em>Create Single JLabel</em>
+
+````java
+package JLabelDemo;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class CreateJLabel extends JFrame {
+    private Container c;
+    private JLabel userLable;
+
+    CreateJLabel() {
+        initComponents();
+    }
+    public void initComponents() {
+        c = this.getContentPane();
+        c.setLayout(null);
+        c.setBackground(Color.black);
+
+        userLable = new JLabel();
+        userLable.setText("Enter Your User name");
+        userLable.setBounds(40,040, 100,200);
+        c.add(userLable);
+
+    }
+    public static void main(String[] args) {
+        CreateJLabel frame= new CreateJLabel();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setBounds(200,200, 500,500);
+        frame.setTitle("CreateJLabel");
+        frame.setResizable(false);
+    }
+    
+    }
+
+````
+
+<em>Create Multiple JLabel</em>
+```java
+package JLabelDemo;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class CreateMultipleJLabel extends JFrame {
+    private Container c;
+    private JLabel UserLabel;
+    private JLabel UserPass;
+
+    CreateMultipleJLabel(){
+        initContainer();
+    }
+    public void initContainer(){
+        c= this.getContentPane();
+        c.setLayout(null);
+        c.setBackground(Color.red);
+
+        JLabel UserLabel = new JLabel();
+        UserLabel.setText("Enter Your UserName: ");
+        UserLabel.setBounds(50,20,150,50);
+        c.add(UserLabel);
+
+        JLabel UserPass= new JLabel("Enter your Password: ");
+        UserPass.setBounds(50,40,150,50);
+        c.add(UserPass);
+
+
+
+    }
+    public static void main(String[] args) {
+
+        CreateMultipleJLabel frame= new CreateMultipleJLabel();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setBounds(200,200, 500,500);
+        frame.setTitle("CreateJLabel");
+        frame.setResizable(false);
+    }
+}
+
+```
 
