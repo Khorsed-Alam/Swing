@@ -20,7 +20,7 @@ public class Imageset extends JFrame {
 
         Image = new JLabel(img);
 
-        Image.setBounds(50,30,150,200);
+        Image.setBounds(50,30,img.getIconWidth(),img.getIconHeight());
         C.add(Image);
      }
 
