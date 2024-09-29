@@ -527,3 +527,66 @@ public class CreateMultipleJLabel extends JFrame {
 
 ```
 
+<h2>Font Style and size of JLabel</h2>
+
+<b>Create new Object ("Font Name", Font style,Font Size );
+<p> Font font = new Font("Arial",Font.BOLD,14);</p>
+
+````java
+package Fontsize_Style_of_JLabel;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class FontDemo extends JFrame {
+    private Container c;
+    private JLabel Username;
+    private  JLabel UserPass;
+    private Font font;
+    FontDemo (){
+        initComponent();
+    }
+    public void initComponent(){
+
+        c= this.getContentPane();
+        c.setLayout(null);
+        c.setBackground(Color.pink);
+
+        Font font = new Font("Arial",Font.BOLD,14);
+
+
+        JLabel Username=new JLabel();
+        Username.setText("Enter Your Name :");
+        Username.setBounds(50,30,150,40);
+        Username.setFont(font);
+        c.add(Username);
+
+
+        JLabel UserPass =new JLabel();
+        UserPass.setText("Enter your password: ");
+        UserPass.setBounds(50,50,200,40);
+        UserPass.setFont(font);
+        c.add(UserPass);
+        
+    }
+
+    public static void main(String[] args) {
+        FontDemo fontDemo= new FontDemo();
+        fontDemo.setVisible(true);
+        fontDemo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fontDemo.setBounds(200,200, 400,400);
+        fontDemo.setTitle("Font Style");
+        fontDemo.setResizable(false);
+    }
+
+}
+
+````
+
+<h2>How to set Foreground and  Background color of JLabel</h2>
+<em>Element <em>
+<ul>
+<li>setOpaque()</li>
+<li>setBackground()---> to change text Background</li>
+<li>setForeground()--->To change text color </li>
+</ul>
