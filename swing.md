@@ -711,3 +711,10 @@ public class Tips extends JFrame {
 }
 
 ````
+
+<h2>How To add image on JLable</h2>
+<ul>
+<li>ImageIcon</li>
+<li>getClass()</li>
+<li>getResource()</li>
+</ul>
